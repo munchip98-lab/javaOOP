@@ -1,0 +1,319 @@
+{
+  "info": {
+    "_postman_id": "30366ffc-3147-4581-8476-b72470343173",
+    "name": "TopCv",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30137628"
+  },
+  "item": [
+    {
+      "name": "Apply",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer e33fc876da733f96a739816a7c605dda",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "event_type",
+              "value": "apply",
+              "type": "text"
+            },
+            {
+              "key": "job_id",
+              "value": "419232",
+              "type": "text"
+            },
+            {
+              "key": "job_title",
+              "value": "Hello World",
+              "type": "text"
+            },
+            {
+              "key": "apply_at",
+              "value": "2023-10-26 08:51:20",
+              "type": "text"
+            },
+            {
+              "key": "candidate_name",
+              "value": "Thanh Thúy",
+              "type": "text"
+            },
+            {
+              "key": "candidate_email",
+              "value": "ththuy116@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "candidate_phone",
+              "value": "0975263958",
+              "type": "text"
+            },
+            {
+              "key": "cv_url",
+              "value": "https://tuyendung.tophiring.vn/biz/cvs-management/cvs/3830319",
+              "type": "text"
+            },
+            {
+              "key": "candidate_id",
+              "value": "3830401",
+              "type": "text"
+            },
+            {
+              "key": "download_url",
+              "value": "https://github.com/prasadgujar/CompetitiveProgramming/raw/master/book/Competitive%20Programming%203.pdf",
+              "type": "text"
+            },
+            {
+              "key": "gender",
+              "value": "Male",
+              "type": "text"
+            },
+            {
+              "key": "signature",
+              "value": "97013bcccda6eea5716503909abc719d060b66d31554542e1414c885f11344f6",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://hiring.basevn.tech/webhook/jobsites/6RAlwAO4vwB9v8EnODgZig7sDRy2Gua8Z9GrJivgcSknUyZG-f901yYLpIk3eYxl1IJBiOcW63wMRTuCbgkin9x15sLXvWnWWJJceKM91LE?code=topcv",
+          "protocol": "https",
+          "host": [
+            "hiring",
+            "basevn",
+            "tech"
+          ],
+          "path": [
+            "webhook",
+            "jobsites",
+            "6RAlwAO4vwB9v8EnODgZig7sDRy2Gua8Z9GrJivgcSknUyZG-f901yYLpIk3eYxl1IJBiOcW63wMRTuCbgkin9x15sLXvWnWWJJceKM91LE"
+          ],
+          "query": [
+            {
+              "key": "code",
+              "value": "topcv"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Webhook",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "signature",
+              "value": "54214c77635fd4a902e9061a74eb5be200a79e7b2e81d6d8cae36c84eac2260c",
+              "type": "text"
+            },
+            {
+              "key": "event_type",
+              "value": "job_approved",
+              "type": "text"
+            },
+            {
+              "key": "job_id",
+              "value": "417194",
+              "type": "text"
+            },
+            {
+              "key": "recruitment_campaign_id",
+              "value": "408020",
+              "type": "text"
+            },
+            {
+              "key": "job_title",
+              "value": "Hello World",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://hiring.basevn.tech/webhook/jobsites/6RAlwAO4vwB9v8EnODgZig7sDRy2Gua8Z9GrJivgcSknUyZG-f901yYLpIk3eYxl1IJBiOcW63wMRTuCbgkin9x15sLXvWnWWJJceKM91LE?code=topcv",
+          "protocol": "https",
+          "host": [
+            "hiring",
+            "basevn",
+            "tech"
+          ],
+          "path": [
+            "webhook",
+            "jobsites",
+            "6RAlwAO4vwB9v8EnODgZig7sDRy2Gua8Z9GrJivgcSknUyZG-f901yYLpIk3eYxl1IJBiOcW63wMRTuCbgkin9x15sLXvWnWWJJceKM91LE"
+          ],
+          "query": [
+            {
+              "key": "Content-Type",
+              "value": null,
+              "disabled": true
+            },
+            {
+              "key": "code",
+              "value": "topcv"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Reject",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "event_type",
+              "value": "job_rejected",
+              "type": "text"
+            },
+            {
+              "key": "job_id",
+              "value": "417194",
+              "type": "text"
+            },
+            {
+              "key": "recruitment_campaign_id",
+              "value": "408020",
+              "type": "text"
+            },
+            {
+              "key": "job_title",
+              "value": "Hello World 1",
+              "type": "text"
+            },
+            {
+              "key": "signature",
+              "value": "3da90bfb6be6d02c81c1fb8c3240cd9db6791e8c593cf40f1bdd2e1d8e2a7000",
+              "type": "text"
+            },
+            {
+              "key": "reject_reason",
+              "value": "Something went wrong",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://hiring.basevn.tech/webhook/jobsites/6RAlwAO4vwB9v8EnODgZig7sDRy2Gua8Z9GrJivgcSknUyZG-f901yYLpIk3eYxl1IJBiOcW63wMRTuCbgkin9x15sLXvWnWWJJceKM91LE?code=topcv",
+          "protocol": "https",
+          "host": [
+            "hiring",
+            "basevn",
+            "tech"
+          ],
+          "path": [
+            "webhook",
+            "jobsites",
+            "6RAlwAO4vwB9v8EnODgZig7sDRy2Gua8Z9GrJivgcSknUyZG-f901yYLpIk3eYxl1IJBiOcW63wMRTuCbgkin9x15sLXvWnWWJJceKM91LE"
+          ],
+          "query": [
+            {
+              "key": "code",
+              "value": "topcv"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Approve",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer a8fa3fa8d640c6901e50fc39ce37eac5"
+          }
+        ],
+        "url": {
+          "raw": "https://api.tophiring.vn/api/jobs/419934/approve",
+          "protocol": "https",
+          "host": [
+            "api",
+            "tophiring",
+            "vn"
+          ],
+          "path": [
+            "api",
+            "jobs",
+            "419934",
+            "approve"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post job",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer a8fa3fa8d640c6901e50fc39ce37eac5"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Chien dich test anh bia 4\",\r\n  \"position_title\": \"nh\\\\\\\\u00e2n vi\\\\\\\\u00ean\",\r\n  \"main_category\": \"10001\",\r\n  \"categories\": [\r\n    \"10003\"\r\n  ],\r\n  \"skills\": [\r\n    \"2\",\r\n    \"5\"\r\n  ],\r\n  \"locations\": [\r\n    {\r\n      \"province_id\": \"2\",\r\n      \"addresses\": [\r\n        {\r\n          \"district_id\": \"210\",\r\n          \"working_address\": \"so 1212\"\r\n        }\r\n      ]\r\n    }\r\n  ],\r\n  \"salary_from\": \"12000000\",\r\n  \"salary_to\": \"14000000\",\r\n  \"salary_level\": \"4\",\r\n  \"salary_currency\": \"VND\",\r\n  \"type\": \"1\",\r\n  \"employee_level\": \"1\",\r\n  \"experience\": \"1-0\",\r\n  \"quantity\": \"1\",\r\n  \"gender\": \"1\",\r\n  \"job_requirement\": \"<p>121<\\\\\\\\\\\\/p>\",\r\n  \"job_description\": \"<p>1212<\\\\\\\\\\\\/p>\",\r\n  \"job_benefit\": \"<p>1212<\\\\\\\\\\\\/p>\",\r\n  \"deadline\": \"2023-12-14\",\r\n  \"contact_email\": [\r\n    \"sandbox_account_2@topcv.vn\"\r\n  ],\r\n  \"contact_name\": \"sandbox_account_2@topcv.vn\",\r\n  \"contact_phone\": \"0398317559\",\r\n  \"recruitment_campaign_id\": null,\r\n  \"create_recruitment_campaign\": 1\r\n}"
+        },
+        "url": {
+          "raw": "https://api.tophiring.vn/api/jobs",
+          "protocol": "https",
+          "host": [
+            "api",
+            "tophiring",
+            "vn"
+          ],
+          "path": [
+            "api",
+            "jobs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
